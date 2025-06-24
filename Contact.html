@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Crimson Vale LLC</title>
+  <title>Contact Us - Crimson Vale LLC</title>
   <style>
     body {
       margin: 0;
@@ -27,24 +27,39 @@
     }
 
     .container {
-      max-width: 800px;
-      margin: 4rem auto;
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
     }
 
     h1 {
       font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .contacts {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-box {
+      flex: 1 1 250px;
+      max-width: 300px;
+      background-color: #f0f0f0;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-box h2 {
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .highlight {
-      font-weight: bold;
+    .contact-box p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
     }
   </style>
 </head>
@@ -56,9 +71,19 @@
 
   <div class="container">
     <h1>Get in Touch</h1>
-    <p><span class="highlight">Nicholas P. Zebell</span></p>
-    <p>Email: <a href="mailto:Nicholas@crimsonvale.co">Nicholas@crimsonvale.co</a></p>
-    <p>Phone: <a href="tel:8153539152">815-353-9152</a></p>
+    <div class="contacts">
+      <div class="contact-box">
+        <h2>Nicholas P. Zebell</h2>
+        <p>Email: <a href="mailto:Nicholas@crimsonvale.co">Nicholas@crimsonvale.co</a></p>
+        <p>Phone: <a href="tel:8153539152">815-353-9152</a></p>
+      </div>
+      <div class="contact-box">
+        <h2>Samuel J. Paliga</h2>
+        <p>Email: <a href="mailto:Samuel@crimsonvale.co">Samuel@crimsonvale.co</a></p>
+        <p>Phone: <a href="tel:7085186705">708-518-6705</a></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
+
