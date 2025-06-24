@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crimson Vale | Apps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Apps</h1>
+    <p>Explore the apps we're building to empower your goals.</p>
+    <a href="index.html">Back to Home</a>
+  </header>
+
+  <main>
+    <p>Details about your app(s) go here — name, features, download links, screenshots, etc.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Crimson Vale</p>
+  </footer>
+</body>
+</html>
