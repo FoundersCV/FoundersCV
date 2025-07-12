@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crimson Vale LLC</title>
+  <title>CrimsonVale LLC</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Playfair Display', serif;
-      color: white;
       background-image: url('https://founderscv.github.io/cv.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      color: white;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -73,6 +73,21 @@
       text-align: center;
       font-size: 1rem;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .tagline {
+        font-size: 1rem;
+        padding: 0.25rem 1rem;
+      }
+
+      nav a {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -92,8 +107,4 @@
   </footer>
 </body>
 </html>
-
-
-
-
 
