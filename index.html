@@ -1,46 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CrimsonVale LLC</title>
+  <title>Crimson Vale</title>
+  <title>Crimson Vale LLC</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('office-bg.jpg') no-repeat center center fixed;
       padding: 0;
       font-family: 'Playfair Display', serif;
-      color: white;
-      background-image: url('https://founderscv.github.io/cv.png');
+      color: #000000;
+      background-image: url('office-bg.jpg');
       background-size: cover;
+      color: #ffffff;
+      min-height: 100vh;
       background-position: center;
-      background-repeat: no-repeat;
       height: 100vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
+    nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 1rem;
+    }
+
+    nav a:hover {
+      color: #e34234;
+      text-decoration: underline;
+    }
+
+    .header-container {
+      text-align: center;
+      margin-top: 10vh;
+      margin-top: 15vh;
+    }
+
+    header h1 {
     h1 {
       font-size: 4rem;
+      margin: 0;
       background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
       padding: 1rem 2rem;
-      border-radius: 12px;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.5rem;
-        padding: 0.75rem 1.5rem;
-      }
+    .tagline {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      padding: 0.25rem 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.2rem;
     }
   </style>
 </head>
 <body>
-  <h1>CrimsonVale LLC</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Apps</a>
+    <a href="#">Contact Us</a>
+    <a href="Apps.html">Apps</a>
+    <a href="Contact.html">Contact Us</a>
+  </nav>
+
+  <div class="header-container">
+    <header>
+      <h1>Crimson Vale</h1>
+      <p class="tagline">Empowering Your Business Growth</p>
+    </header>
+    <h1>Crimson Vale LLC</h1>
+    <p class="tagline">Empowering Your Business Growth</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Crimson Vale LLC. All rights reserved.
+  </footer>
 </body>
 </html>
+
+
 
 
 
