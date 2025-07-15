@@ -7,33 +7,30 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Playfair Display', serif;
-      background-image: url('apps-bg.png');
-      background-size: 60%; /* Zoomed out */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: white;
+      font-family: 'Arial', sans-serif;
+      background: url('apps-bg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
 
     .navbar {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.7);
       display: flex;
       justify-content: space-between;
       padding: 1rem 2rem;
     }
 
     .navbar a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
       font-weight: bold;
     }
 
     .navbar a:hover {
-      color: #ff4d4d;
+      text-decoration: underline;
     }
 
     .container {
@@ -42,14 +39,14 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 2rem;
     }
 
-    .message {
+    h1 {
+      font-size: 3rem;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 1rem 2rem;
       border-radius: 10px;
-      font-size: 2rem;
-      font-weight: bold;
     }
   </style>
 </head>
@@ -61,9 +58,7 @@
   </div>
 
   <div class="container">
-    <div class="message">
-      CrimsonVale apps<br />coming soon
-    </div>
+    <h1>CrimsonVale apps are coming soon!</h1>
   </div>
 </body>
 </html>
