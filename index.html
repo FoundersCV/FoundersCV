@@ -6,41 +6,42 @@
   <title>CrimsonVale LLC</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       font-family: 'Playfair Display', serif;
+      color: white;
+    }
+
+    body {
       background-image: url('cv.png'); 
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      color: white;
-      position: relative;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     /* Crimson Mist Overlay */
     .crimson-mist {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, rgba(128, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-  z-index: 1;
-  animation: mistFade 5s ease-in-out forwards;
-  pointer-events: none;
-  opacity: 1;
-}
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: radial-gradient(circle at center, rgba(128, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+      z-index: 1;
+      animation: mistFade 5s ease-in-out forwards;
+      pointer-events: none;
+      opacity: 1;
+    }
 
-@keyframes mistFade {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
+    @keyframes mistFade {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
 
     nav {
       display: flex;
@@ -64,32 +65,25 @@
       color: #ff4c4c;
     }
 
-    .nav-left {
-      text-align: left;
-    }
-
-    .nav-center {
+    .nav-left,
+    .nav-center,
+    .nav-right {
+      flex: 1;
       text-align: center;
     }
 
-    .nav-right {
-      text-align: right;
-    }
-
-    .nav-container {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
+    .nav-left { text-align: left; }
+    .nav-right { text-align: right; }
 
     .header-content {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      flex-grow: 1;
+      height: 100vh;
       padding-bottom: 4rem;
       position: relative;
       z-index: 2;
+      flex-direction: column;
     }
 
     .header-content h1 {
@@ -97,6 +91,43 @@
       background-color: rgba(0, 0, 0, 0.5);
       padding: 1rem 2rem;
       border-radius: 12px;
+      margin: 0;
+    }
+
+    .scroll-indicator {
+      text-align: center;
+      margin-top: 1rem;
+      animation: pulse 2s infinite;
+      font-size: 1.2rem;
+      z-index: 2;
+      position: relative;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; transform: translateY(0); }
+      50% { opacity: 1; transform: translateY(6px); }
+    }
+
+    .about {
+      background-color: #111;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .about-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      opacity: 0.9;
     }
 
     @media (max-width: 768px) {
@@ -108,6 +139,14 @@
       .header-content h1 {
         font-size: 2.5rem;
       }
+
+      .about h2 {
+        font-size: 2rem;
+      }
+
+      .about p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -115,15 +154,28 @@
   <!-- Crimson Mist Overlay -->
   <div class="crimson-mist"></div>
 
+  <!-- Navigation -->
   <nav>
     <div class="nav-left"><a href="index.html">Home</a></div>
     <div class="nav-center"><a href="Apps.html">Apps</a></div>
     <div class="nav-right"><a href="Contact.html">Contact Us</a></div>
   </nav>
 
+  <!-- Hero -->
   <div class="header-content">
     <h1>CrimsonVale LLC</h1>
+    <div class="scroll-indicator">↓ Scroll to Learn More</div>
   </div>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-inner">
+      <h2>What is CrimsonVale?</h2>
+      <p>
+        CrimsonVale is where bold innovation meets silent mastery. We are a modern tech & design collective that creates striking solutions with a subtle edge. Whether it's apps, brand visuals, or immersive experiences — our work speaks in shadows and shines in the spotlight.
+      </p>
+    </div>
+  </section>
 </body>
 </html>
 
